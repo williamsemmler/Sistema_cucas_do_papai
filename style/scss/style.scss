@@ -36,11 +36,13 @@ i {
     left: 0;
 }
 #maisInformacoes {
-    width: 85%;
-    background-color: rgba(0, 0, 0, 0.452);
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.616);
     box-shadow: 1px 1px 5px black;
     position: relative;
-    transform: translateY(10%);
     display: none;
-    padding: 10px
+}
+.tituloTables {
+    background-color: bisque !important;
 }
