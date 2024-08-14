@@ -8,6 +8,14 @@ function fecharJanela() {
 function logoff () {
     window.location.href = "../index.html"
 }
+function mostrarResultado() {
+    let telaSucesso = document.createElement("p");
+    telaSucesso.style.backgroundColor = "green";
+    telaSucesso.innerText = "Pedido lançado com sucesso!";
+
+    document.getElementById("telaSucesso").appendChild(telaSucesso);
+
+}
 
 function calcularQtdTotal() {
     let cucaSimples = parseInt(document.getElementById("cucaSimples").value) || 0;
@@ -56,6 +64,9 @@ function calcularQtdTotal() {
 }
 
 function requisitarPagina (url) {
+    if (document.getElementById("mensagemSucesso")) {
+        document.getElementById ("mensagemSucesso").style.display = "none";
+    }
 
     let pagina = new XMLHttpRequest ();
     pagina.open('GET', url);

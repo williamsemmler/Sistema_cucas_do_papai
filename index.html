@@ -17,23 +17,23 @@
 <body>
     <div class="container">
         <div class="row mt-3">
-            <div class="col-8 col-md-6 mx-auto d-flex justify-content-center">
+            <div class="col-6 col-md-4 mx-auto d-flex justify-content-center">
                 <img src="img/logo_oficial.jpg" class="img-fluid" alt="">
             </div>
         </div>
         <div class="row mt-2">
             <div class="col-12 col-lg-8 mx-auto mt-2">
-                <form action="php/home.php" class="d-flex flex-column">
-                    <div class="w-75 my-2 mx-auto d-flex justify-content-center text-align" id="dados_usuario">
-                        <label for="nome_usuario" class="text-white w-50 d-none d-sm-inline text-center">Nome do usuário:</label>
+                <form action="php/validador_login.php" class="d-flex flex-column" method="POST">
+                    <div class="w-75 my-2 mx-auto d-flex justify-content-center text-center" id="dados_usuario">
+                        <label for="nome_usuario" class="text-white w-50 d-none d-sm-inline my-auto text-center">Nome do usuário:</label>
                         <input type="text" name="nome_usuario" id="nome_usuario" class="form-control" placeholder="Digite o nome de usuário" required>
                     </div>
                     <div class="w-75 my-2 mx-auto d-flex justify-content-center text-align">
-                        <label for="senha_usuario" class="text-white w-50 d-none d-sm-inline text-center">Senha de acesso:</label>
+                        <label for="senha_usuario" class="text-white w-50 d-none d-sm-inline text-center my-auto">Senha de acesso:</label>
                         <input type="password" name="senha_usuario" id="senha_usuario" class="form-control" placeholder="Digite a senha de acesso" required>
                     </div>
                     <div class="w-75 mt-4 mx-auto d-flex justify-content-center text-align">
-                        <div class="w-100 text-center">
+                        <div class="w-75 text-center">
                             <button type="submit" class="btn btn-warning w-50">Acessar o sistema</button>
                         </div>
                     </div>

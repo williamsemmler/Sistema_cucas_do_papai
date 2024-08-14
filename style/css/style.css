@@ -22,10 +22,6 @@ body main {
   color: rgba(255, 255, 255, 0.767);
 }
 
-.barra-lateral {
-  height: 100vh;
-}
-
 i {
   margin: 10px 0;
   font-size: 25px;
